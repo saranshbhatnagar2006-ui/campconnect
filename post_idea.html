@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Idea - CampusInnovate</title>
+    <link rel="stylesheet" href="style.css">
+    <a href="Welcome.html">Back to Home</a>
+    <a href="Browser_Ideas.html">Back to Home</a><br>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Campus<span>Innovate</span></div>
+        <nav class="nav-links">
+            <a href="/dashboard">Browse Idea</a>
+            <a href="/post-project" class="active">Post Project</a>
+            <a href="/profile" class="btn-nav">My Profile</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="dashboard-header">
+            <a href="Welcome.html" class="back-link">Back to Home</a>
+            <h1>Share Your Campus Idea</h1>
+            <p>Post your project, find collaborators, and bring your vision to life.</p>
+        </section>
+
+        <section class="form-container">
+            <form action="/submit-idea" method="POST" class="post-idea-form">
+                
+                <!-- Project Details -->
+                <div class="form-group">
+                    <label for="project-title">Project Title</label><br>
+                    <input type="text" id="project-title" name="title" placeholder="e.g., Campus Navigation App" required>
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="project-description">Project Description</label><br>
+                    <textarea id="project-description" name="description" rows="5" placeholder="Describe your idea, goals, and what you're building..." required></textarea>
+                </div>
+
+                <br>
+
+                <!-- Project Stage -->
+                <div class="form-group">
+                    <label for="stage-filter">Project Stage</label><br>
+                    <select id="stage-filter" name="stage">
+                        <option value="idea">Idea Phase</option>
+                        <option value="prototype">Prototyping</option>
+                        <option value="mvp">MVP Built</option>
+                        <option value="scaling">Seeking Expansion</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <!-- Tech Stack & Skills Required -->
+                <div class="form-group">
+                    <label for="search-input">Required Skills / Tech Stack</label><br>
+                    <input type="text" id="search-input" name="skills" placeholder="e.g., Python, React, GPS API (separated by commas)">
+                </div>
+
+                <br><br>
+
+                <!-- Form Action Buttons -->
+                <div class="form-actions">
+                    <button type="submit" class="btn-search">Post Idea</button>
+                    <a href="Welcome.html" class="btn-nav">Back to Home</a>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <br>
+
+    <footer class="footer">
+        <p>&copy; 2026 CampusInnovate. Built for student creators.</p>
+    </footer>
+</body>
+</html>
